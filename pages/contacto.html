@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Carpeta estilos-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Tipografías-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link href="./assets/img/favicon.png" rel="icon">
+    <!--Título-->
+    <title>Studio Velvet</title>
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <header id="header" class="fixed-top">
+        <div class="container">
+            <!--Logotipo-->
+            <div class="logo float-left">
+                <a href="index.html" class="scrollto"><img src="./assets/img/logo.png" alt="" class="img-fluid"></a>
+            </div>
+            <!--Items Navegación-->
+            <nav class="navbar float-right d-none d-ig-block">
+                <ul>
+                    <li class="nav-link">
+                        <a href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="active">
+                        <a href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Termina barra-->
+    <main>
+        <!--Empieza Contacto-->
+        <section id="contacto">
+            <div class="container-fluid">
+
+                <div class="section-header">
+                    <H3>CONTÁCTANOS</H3>
+                </div>
+
+                <div class="row wow fadeInup">
+
+                    <!--Formulario-->
+
+                    <div class="form">
+
+                        <form action="" method="" role="form" class="contactForm">
+
+                            <div class="form-row">
+
+                                <div class="form-group col-lg-6">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Escribe tu nombre" data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 carácteres"/>
+                                    <div class="validation"></div>
+                                </div>
+
+                                <div class="form-group col-lg-6">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="matias123@gmail.com" data-rule="email" data-msg="Por favor ingresar email valido" />
+                                    <div class="validation"></div>
+                                </div>
+
+                            </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Por favor escribe" placeholder="Mensaje"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+
+                            <div class="text-center"><button type="submit" title="Send">Send</button></div>
+                        </form>
+                        <!--Termina Formulario-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Empieza footer-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h4>VISÍTANOS</h4>
+                        <P>Av. Emilio Castro 7525, Buenos Aires, Argentina.</P>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h4>HORARIOS</h4>
+                        <P>Martes a Sábados
+                            de 10 a 20 hs.</P>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h4>LLÁMANOS</h4>
+                        <P>+(54)11-6226-7949
+                            +(54)11-2143-9023</P>
+                    </div>
+
+                    <div>
+                        <h4>SÍGUENOS</h4>
+                        <!--Acá van los social links-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Termina Footer-->
+</body>
+</html>
