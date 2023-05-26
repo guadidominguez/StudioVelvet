@@ -20,32 +20,39 @@
 
 <body>
     <!--Barra de navegación-->
-    <header id="header">
-        <div>
-            <!--Logotipo-->
-            <div>
-                <a href="index.html"><img src="./assets/img/logo.png" alt="logo"></a>
-            </div>
+    <header id="header" class="navbar-inverse navbar-fixed-top">
+        <div class="container">
             <!--Items Navegación-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="./pages/nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="./pages/servicios.html">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="./pages/productos.html">PRODUCTOS</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="navbar-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+                <div class="container-fluid">
+                    <a class= "navbar-brand" href="#">
+                        <img src="./assets/img/logo.png" alt="logo" width="210" height="53">
+                    </a>
+                    <button  class=""navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-toggler-icon" id="navbarSupportedContent"></div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <!--Termina barra-->
@@ -53,23 +60,34 @@
 
     <main id="main">
         <!--Empieza Inicio-->
-        <div>
-            <img src="./assets/img/Inicio.jpg"alt="Portada" widht="100%">
+        <!--Carousel imágenes-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/img/Inicio.jpg" class="d-block w-100" alt="slide1">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/img/Portada2.jpg" class="d-block w-100" alt="slide2">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/img/Portada3.jpg" class="d-block w-100" alt="slide3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
         </div>
         <!--Empieza nosotros-->
-        <!--Trabajar con -->
-        <section>
+        <section class="w-50 mx-auto text-center pt-5" id="intro">
             <div>
                 <div>
                     <div>
                         <img src="./assets/img/Nosotros.png"alt="Nosotros">
                     </div>
                     <div>
-                        <H2>NOSOTROS</H2>
-                        <p>Somos Studio Velvet, brindamos servicios de peluquería y barbería con el objetivo de brindar una buena experiencia a jóvenes interesados en su estética.
-                        </p>
-                        <p>Nos gusta predisponer de una buena atención a nuestros clientes, anímate a hacer un cambio tomando cafecito y escuchando buena música!
-                        </p>
+                        <h1 class="p-3 fs-2 border-top border-3"><span class="text-primary">NOSOTROS</span></h1>
+                        <p class="p-3 fs-4">Somos <span class="text-primary">Studio Velvet</span>, brindamos servicios de peluquería y barbería con el objetivo de brindar una buena experiencia a jóvenes interesados en su estética.Nos gusta predisponer de una buena atención a nuestros clientes, anímate a hacer un cambio tomando cafecito y escuchando buena música!</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +96,7 @@
 
         <!--Empieza Servicios-->
         <!--Bootstrap-->
-        <section class="wow fadeIn">
+        <section id="servicios" class="wow fadeIn">
             <div class="container">
 
                 <div class="row row-eq-height justify-content-center">
@@ -136,51 +154,26 @@
                 </div>
 
             </div>
-        </sectionn>
+        </section>
         <!--Termina Servicios-->
 
         <!--Empieza Productos-->
-        <!--Trabajar con bootstrap-->
+        <!--FLEXBOX-->
         <section>
-            <div>
-                <header>
-                    <h3>PRODUCTOS</h3>
-                </header>
-                <div>
-                    <div>
-                        <div>
-                            <img src="./assets/img/producto1.png" alt="Producto1">
-                        </div>
+            <div class="galeria">PRODUCTOS
+                <div class=fotos>
+                    <div class="fotos1">
+                        <img class="foto" src="./assets/img/producto1.png" alt="jack1">
+                        <img class="foto" src="./assets/img/producto2.png" alt="jack2">
+                        <img class="foto" src="./assets/img/producto3.png" alt="jack3">
                     </div>
-                    <div>
-                        <div>
-                            <img src="./assets/img/producto2.png" alt="Producto2">
-                        </div>
+                    <div class="fotos2">
+                        <img class="foto" src="./assets/img/producto4.png" alt="jack4">
+                        <img class="foto" src="./assets/img/producto5.png" alt="jack5">
+                        <img class="foto" src="./assets/img/producto6.png" alt="jack6">
                     </div>
-                    <div>
-                        <div>
-                            <img src="./assets/img/producto3.png" alt="Producto3">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./assets/img/producto4.png" alt="Producto4">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./assets/img/producto5.png" alt="Producto5">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./assets/img/producto6.png" alt="Producto6">
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-
+            </div>>
         </section>
         <!--Termina Productos-->
 
@@ -229,34 +222,25 @@
 
     <!--Empieza footer-->
     <!--Trabajar con GRIDS-->
-    <footer>
-        <div>
-            <div>
-                <div>
-
-                    <div>
-                        <h4>VISÍTANOS</h4>
-                        <P>Av. Emilio Castro 7525, Buenos Aires, Argentina.</P>
-                    </div>
-
-                    <div>
-                        <h4>HORARIOS</h4>
-                        <P>Martes a Sábados
-                            de 10 a 20 hs.</P>
-                    </div>
-
-                    <div>
-                        <h4>LLÁMANOS</h4>
-                        <P>+(54)11-6226-7949
-                            +(54)11-2143-9023</P>
-                    </div>
-
-                    <div>
-                        <h4>SÍGUENOS</h4>
-                        <!--Acá van los social links-->
-                    </div>
-
-                </div>
+    <footer class="footer">
+        <div class="footerorden">
+            <div class="footercolumn">
+                <h4>VISÍTANOS</h4>
+                <P>Av. Emilio Castro 7525, Buenos Aires, Argentina.</P>
+            </div>
+            <div class="footercolumn2">
+                <h4>HORARIOS</h4>
+                <P>Martes a Sábados
+                de 10 a 20 hs.</P>
+            </div>
+            <div class="footercolumn3">
+                <h4>LLÁMANOS</h4>
+                <P>+(54)11-6226-7949
+                +(54)11-2143-9023</P>
+            </div>
+            <div class="footercolumn4">
+                <h4>SÍGUENOS</h4>
+                <!--Acá van los social links-->
             </div>
         </div>
     </footer>
