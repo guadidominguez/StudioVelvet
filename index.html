@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Peluquería, Barberia. Especialistas en cortes, colores y tratamientos. Todos los estilos en un sólo lugar.">
+    <meta name="keywords" content="Barbería, peluquería, Studio, Velvet, corte, color de pelo">
+    <meta property="og:title" content=Studio Velvet|>
+    <meta property="og:site_name" content=Studio Velvet>
+    <meta property="og:url" content=file:///C:/Users/guada/OneDrive/Escritorio/2da%20entrega%20-%20Dominguez/index.html?name=&email=&Mensaje=>
+    <meta property="og:description" content=Peluquería y Barbería. Todos los estilos en un sólo lugar!>
+    <meta property="og:image" content=file:///C:/Users/guada/OneDrive/Escritorio/2da%20entrega%20-%20Dominguez/assets/img/logo.png>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--Carpeta estilos-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!--Tipografías-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,52 +24,39 @@
     <link href="./assets/img/favicon.png" rel="icon">
     <!--Título-->
     <title>Studio Velvet</title>
+    <style>
+        strong{
+            font-style: italic;
+            text-decoration-line: underline;
+        }
+    </style>
 </head>
 
 <body>
+
     <!--Barra de navegación-->
-    <header id="header" class="navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <!--Items Navegación-->
-            <div class="navbar-header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
-                <div class="container-fluid">
-                    <a class= "navbar-brand" href="#">
-                        <img src="./assets/img/logo.png" alt="logo" width="210" height="53">
-                    </a>
-                    <button  class=""navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-toggler-icon" id="navbarSupportedContent"></div>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
+    <!--FLEX & ANIMACIÓN-->
+    <header class="fadeInDown">
+        <figure class="logo">
+            <img src="./assets/img/logo.png" alt="Logo">
+        </figure>
+        <nav class="menu">
+            <a class="active" href="./index.html">INICIO</a>
+            <a class ="link" href="./pages/nosotros.html">NOSOTROS</a>
+            <a class="link" href="./pages/servicios.html">SERVICIOS</a>
+            <a class="link" href="./pages/productos.html">PRODUCTOS</a>
+            <a class="link" href="./pages/contacto.html">CONTACTO</a>
+        </nav>
     </header>
     <!--Termina barra-->
 
 
     <main id="main">
-        <!--Empieza Inicio-->
-        <!--Carousel imágenes-->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+    <!--Carousel imágenes-->
+    <!--Bootstrap -->
+    <section id="banner container-fluid">
+        <div id="carouselExampleControls" class="carousel slide container-fluid" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <img src="./assets/img/Inicio.jpg" class="d-block w-100" alt="slide1">
@@ -77,27 +72,33 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!--Empieza nosotros-->
-        <section class="w-50 mx-auto text-center pt-5" id="intro">
-            <div>
-                <div>
-                    <div>
+    </section>
+    <!--Termina carousel-->
+
+    <!--Empieza nosotros-->
+    <!--Bootstrap & System Grid-->
+        <section id="intro" class="w-80 mx-auto text-center">
+            <div class="row" style="padding-left:30px;">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <h1 class="p-3  border-top border-3"><span class="text-warning">NOSOTROS</span></h1>
+                        <p class="p-3" style="padding-top:30px;"> Somos <span class="text-warning">Studio Velvet</span>, brindamos servicios de <strong> peluquería y barbería </strong> con el objetivo de brindar una buena experiencia a jóvenes interesados en su estética. Nos gusta predisponer de una buena atención a nuestros clientes, <em> anímate </em> a hacer un cambio tomando cafecito y escuchando buena música!</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-8">
                         <img src="./assets/img/Nosotros.png"alt="Nosotros">
                     </div>
-                    <div>
-                        <h1 class="p-3 fs-2 border-top border-3"><span class="text-primary">NOSOTROS</span></h1>
-                        <p class="p-3 fs-4">Somos <span class="text-primary">Studio Velvet</span>, brindamos servicios de peluquería y barbería con el objetivo de brindar una buena experiencia a jóvenes interesados en su estética.Nos gusta predisponer de una buena atención a nuestros clientes, anímate a hacer un cambio tomando cafecito y escuchando buena música!</p>
-                    </div>
-                </div>
             </div>
         </section>
-        <!--Termina Nosotros-->
+    <!--Termina Nosotros-->
 
-        <!--Empieza Servicios-->
-        <!--Bootstrap-->
+    <!--Empieza Servicios-->
+    <!--Bootstrap & ANIMACIÓN-->
         <section id="servicios" class="wow fadeIn">
-            <div class="container">
+            <div class="container">SERVICIOS
 
                 <div class="row row-eq-height justify-content-center">
                     <div class="card wow bounceInUp">
@@ -155,12 +156,15 @@
 
             </div>
         </section>
-        <!--Termina Servicios-->
+    <!--Termina Servicios-->
 
-        <!--Empieza Productos-->
-        <!--FLEXBOX-->
+    <!--Empieza Productos-->
+    <!--FLEXBOX-->
         <section>
-            <div class="galeria">PRODUCTOS
+            <div class="section-header">
+                    <H3>PRODUCTOS</H3>
+            </div>
+            <div class="galeria">
                 <div class=fotos>
                     <div class="fotos1">
                         <img class="foto" src="./assets/img/producto1.png" alt="jack1">
@@ -173,16 +177,16 @@
                         <img class="foto" src="./assets/img/producto6.png" alt="jack6">
                     </div>
                 </div>
-            </div>>
+            </div>
         </section>
-        <!--Termina Productos-->
+    <!--Termina Productos-->
 
         <!--Empieza Contacto-->
         <!--Bootstrap-->
-        <section>
+        <section id="contacto">
             <div class="container-fluid">
 
-                <div class="section-header">
+                <div class="section-header text-center">
                     <H3>CONTÁCTANOS</H3>
                 </div>
 
@@ -196,55 +200,55 @@
 
                             <div class="form-row">
 
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-6 mx-auto">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Escribe tu nombre" data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 carácteres"/>
                                     <div class="validation"></div>
                                 </div>
 
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-6 mx-auto">
                                     <input type="email" class="form-control" name="email" id="email" placeholder="matias123@gmail.com" data-rule="email" data-msg="Por favor ingresar email valido" />
                                     <div class="validation"></div>
                                 </div>
-                            </div>
-                                <div class="form-group">
+
+                                <div class="form-group col-lg-6 mx-auto">
                                     <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Por favor escribe" placeholder="Mensaje"></textarea>
                                     <div class="validation"></div>
                                 </div>
-
-                            <div class="text-center"><button type="submit" title="Send">Send</button></div>
+                            </div>
+                            <div class="text-center col-lg-4 mx-auto"><button type="submit" title="Send">Send</button></div>
                         </form>
-                        <!--Termina Formulario-->
                     </div>
+                    <!--Termina Formulario-->
                 </div>
             </div>
         </section>
+
     </main>
 
     <!--Empieza footer-->
-    <!--Trabajar con GRIDS-->
+    <!--GRIDS-->
     <footer class="footer">
         <div class="footerorden">
-            <div class="footercolumn">
+            <div class="column1">
                 <h4>VISÍTANOS</h4>
-                <P>Av. Emilio Castro 7525, Buenos Aires, Argentina.</P>
+                <P>Av. Emilio Castro 7525, <br>Buenos Aires, Argentina.</P>
             </div>
-            <div class="footercolumn2">
+            <div class="column2">
                 <h4>HORARIOS</h4>
-                <P>Martes a Sábados
-                de 10 a 20 hs.</P>
+                <P>Martes a Sábados <br> de 10 a 20 hs.</P>
             </div>
-            <div class="footercolumn3">
+            <div class="column3">
                 <h4>LLÁMANOS</h4>
-                <P>+(54)11-6226-7949
-                +(54)11-2143-9023</P>
+                <P>+(54)11-6226-7949 <br>+(54)11-2143-9023</P>
             </div>
-            <div class="footercolumn4">
+            <div class="column4">
                 <h4>SÍGUENOS</h4>
                 <!--Acá van los social links-->
             </div>
         </div>
     </footer>
     <!--Termina Footer-->
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>

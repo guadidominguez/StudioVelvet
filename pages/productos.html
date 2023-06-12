@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Peluquería, Barberia. Especialistas en cortes, colores y tratamientos. Todos los estilos en un sólo lugar.">
+    <meta name="keywords" content="Barbería, peluquería, Studio, Velvet, corte, color de pelo">
+    <meta property="og:title" content=Studio Velvet|>
+    <meta property="og:site_name" content=Studio Velvet>
+    <meta property="og:url" content=file:///C:/Users/guada/OneDrive/Escritorio/2da%20entrega%20-%20Dominguez/index.html?name=&email=&Mensaje=>
+    <meta property="og:description" content=Peluquería y Barbería. Todos los estilos en un sólo lugar!>
+    <meta property="og:image" content=file:///C:/Users/guada/OneDrive/Escritorio/2da%20entrega%20-%20Dominguez/assets/img/logo.png>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--Carpeta estilos-->
     <link rel="stylesheet" href="../css/style.css">
     <!--Tipografías-->
@@ -11,122 +21,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
     <!--Favicon-->
-    <link href="./assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/favicon.png" rel="icon">
     <!--Título-->
-    <title>Studio Velvet</title>
+    <title>Productos | Studio Velvet</title>
+    <style>
+        strong{
+            font-style: italic;
+            text-decoration-line: underline;
+        }
+    </style>
 </head>
 
 <body>
+
     <!--Barra de navegación-->
-    <header id="header">
-        <div>
-            <!--Logotipo-->
-            <div>
-                <a href="index.html"><img src="./assets/img/logo.png" alt=""></a>
-            </div>
-            <!--Items Navegación-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="./nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="./servicios.html">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="./productos.html">PRODUCTOS</a>
-                    </li>
-                    <li></li>
-                        <a href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <!--FLEX & ANIMACIÓN-->
+    <header class="fadeInDown">
+        <figure class="logo">
+            <img src="../assets/img/logo.png" alt="Logo">
+        </figure>
+        <nav class="menu">
+            <a class="link" href="../index.html">INICIO</a>
+            <a class ="link" href="../pages/nosotros.html">NOSOTROS</a>
+            <a class="link" href="../pages/servicios.html">SERVICIOS</a>
+            <a class="active" href="../pages/productos.html">PRODUCTOS</a>
+            <a class="link" href="../pages/contacto.html">CONTACTO</a>
+        </nav>
     </header>
     <!--Termina barra-->
 
-    <main>
-        <!--Empieza Productos-->
-        <section id="productos" class="procut">
-            <div class="container">
 
-                <header class="section-header">
-                    <h3 class="section-title">PRODUCTOS</h3>
-                </header>
-
-                <div class="row productos-container">
-                    <div class="col-lg-4 col-md-6 producto-item filter-app">
-                        <div class="producto-wrap">
-                            <img src="../assets/img/producto1.png" alt="Producto1" class="img-fluid">
-                        </div>
+    <main id="main">
+    <!--Empieza Productos-->
+    <!--FLEXBOX-->
+        <section>
+            <div class="section-header">
+                    <H3>PRODUCTOS</H3>
+            </div>
+            <div class="galeria">
+                <div class=fotos>
+                    <div class="fotos1">
+                        <img class="foto" src="../assets/img/producto1.png" alt="jack1">
+                        <img class="foto" src="../assets/img/producto2.png" alt="jack2">
+                        <img class="foto" src="../assets/img/producto3.png" alt="jack3">
                     </div>
-                    <div class="col-lg-4 col-md-6 producto-item filter-app">
-                        <div class="producto-wrap">
-                            <img src="../assets/img/producto2.png" alt="">
-                        </div>
+                    <div class="fotos2">
+                        <img class="foto" src="../assets/img/producto4.png" alt="jack4">
+                        <img class="foto" src="../assets/img/producto5.png" alt="jack5">
+                        <img class="foto" src="../assets/img/producto6.png" alt="jack6">
                     </div>
-                    <div class="col-lg-4 col-md-6 producto-item filter-app">
-                        <div class="producto-wrap">
-                            <img src="../assets/img/producto3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 producto-item filter-app">
-                        <div class="producto-wrap">
-                            <img src="../assets/img/producto4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 producto-item filter-app">
-                        <div class="producto-wrap">
-                            <img src="../assets/img/producto5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 producto-item filter-app">
-                        <div class="producto-wrap">
-                            <img src="../assets/img/producto6.png" alt="">
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
-        <!--Termina Productos-->
+    <!--Termina Productos-->
     </main>
 
-        <!--Empieza footer-->
-    <footer>
-        <div>
-            <div>
-                <div>
-
-                    <div>
-                        <h4>VISÍTANOS</h4>
-                        <P>Av. Emilio Castro 7525, Buenos Aires, Argentina.</P>
-                    </div>
-
-                    <div>
-                        <h4>HORARIOS</h4>
-                        <P>Martes a Sábados
-                            de 10 a 20 hs.</P>
-                    </div>
-
-                    <div>
-                        <h4>LLÁMANOS</h4>
-                        <P>+(54)11-6226-7949
-                            +(54)11-2143-9023</P>
-                    </div>
-
-                    <div>
-                        <h4>SÍGUENOS</h4>
-                        <!--Acá van los social links-->
-                    </div>
-
-                </div>
+    <!--Empieza footer-->
+    <!--GRIDS-->
+    <footer class="footer">
+        <div class="footerorden">
+            <div class="column1">
+                <h4>VISÍTANOS</h4>
+                <P>Av. Emilio Castro 7525, <br>Buenos Aires, Argentina.</P>
+            </div>
+            <div class="column2">
+                <h4>HORARIOS</h4>
+                <P>Martes a Sábados <br> de 10 a 20 hs.</P>
+            </div>
+            <div class="column3">
+                <h4>LLÁMANOS</h4>
+                <P>+(54)11-6226-7949 <br>+(54)11-2143-9023</P>
+            </div>
+            <div class="column4">
+                <h4>SÍGUENOS</h4>
+                <!--Acá van los social links-->
             </div>
         </div>
     </footer>
     <!--Termina Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>

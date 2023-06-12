@@ -1,0 +1,71 @@
+/*MENÚ*/
+.fadeInDown{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+header{
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        display:none;
+    }
+    .menu {
+        .link{
+            text-transform: uppercase;
+            transition: 0.4s;
+            color:white;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 28px;
+            padding: 0 10px 0 48px;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color:  yellow;
+                transition: 0.4s;
+            }
+        }
+        .esconder-menu{
+            order:1;
+            font-size: 30px;
+            display: none;
+            transition: 0.4s;
+        }
+    }
+    .mostrar-menu{
+        order:1;
+        font-size: 30px;
+        display: none;
+        transition: 0.4s;
+    }
+
+}
+
+.menu{
+    .active{
+        text-transform: uppercase;
+        transition: 0.4s;
+        color:yellow;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        padding: 0 10px 0 48px;
+        text-decoration: none;
+    }
+}
+
+
+#check {
+  display: none
+}
+
+/*TERMINA MENÚ*/

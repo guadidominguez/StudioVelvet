@@ -1,0 +1,58 @@
+/*NOSOTROS*/
+#intro {
+    padding-top: 70px;
+    .container{
+        .row{
+        flex-wrap: nowrap;
+        }
+    }
+}
+/*TERMINA NOSOTROS*/
+
+/*CONTACTO*/
+#contacto {
+    .container-fluid{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        .section-header{
+            padding-bottom: 30px;
+        }
+    }
+}
+/*TERMINA CONTACTOS*/
+
+
+/*SERVICIOS*/
+#servicios {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    .card{
+        background: black;
+        border-color: yellow;
+        border-radius: 10px;
+        margin: 15px 15px;
+        padding: 15px 0;
+        text-align: center;
+        color: whitesmoke;
+        transition: 0.3s ease-in-out;
+        height: 100%;
+        .card-title{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .card-text{
+            font-size: 15px;
+            color: black;
+        }
+        &:hover{
+            background: yellow;
+            border-color: yellow;
+            color: black;
+        }
+    }
+}
+/*TERMINA SERVICIOS*/

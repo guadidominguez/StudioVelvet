@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Peluquería, Barberia. Especialistas en cortes, colores y tratamientos. Todos los estilos en un sólo lugar.">
+    <meta name="keywords" content="Barbería, peluquería, Studio, Velvet, corte, color de pelo">
+    <meta property="og:title" content=Studio Velvet|>
+    <meta property="og:site_name" content=Studio Velvet>
+    <meta property="og:url" content=file:///C:/Users/guada/OneDrive/Escritorio/2da%20entrega%20-%20Dominguez/index.html?name=&email=&Mensaje=>
+    <meta property="og:description" content=Peluquería y Barbería. Todos los estilos en un sólo lugar!>
+    <meta property="og:image" content=file:///C:/Users/guada/OneDrive/Escritorio/2da%20entrega%20-%20Dominguez/assets/img/logo.png>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--Carpeta estilos-->
     <link rel="stylesheet" href="../css/style.css">
     <!--Tipografías-->
@@ -11,48 +21,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
     <!--Favicon-->
-    <link href="./assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/favicon.png" rel="icon">
     <!--Título-->
-    <title>Studio Velvet</title>
+    <title>Contacto | Studio Velvet</title>
+    <style>
+        strong{
+            font-style: italic;
+            text-decoration-line: underline;
+        }
+    </style>
 </head>
 
 <body>
+
     <!--Barra de navegación-->
-    <header id="header" class="fixed-top">
-        <div class="container">
-            <!--Logotipo-->
-            <div class="logo float-left">
-                <a href="index.html" class="scrollto"><img src="./assets/img/logo.png" alt="" class="img-fluid"></a>
-            </div>
-            <!--Items Navegación-->
-            <nav class="navbar float-right d-none d-ig-block">
-                <ul>
-                    <li class="nav-link">
-                        <a href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="./nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="./servicios.html">SERVICIOS</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="./productos.html">PRODUCTOS</a>
-                    </li>
-                    <li class="active">
-                        <a href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <!--FLEX & ANIMACIÓN-->
+    <header class="fadeInDown">
+        <figure class="logo">
+            <img src="../assets/img/logo.png" alt="Logo">
+        </figure>
+        <nav class="menu">
+            <a class="link" href="../index.html">INICIO</a>
+            <a class ="link" href="../pages/nosotros.html">NOSOTROS</a>
+            <a class="link" href="../pages/servicios.html">SERVICIOS</a>
+            <a class="link" href="../pages/productos.html">PRODUCTOS</a>
+            <a class="active" href="../pages/contacto.html">CONTACTO</a>
+        </nav>
     </header>
     <!--Termina barra-->
-    <main>
+
+
+    <main id="main">
         <!--Empieza Contacto-->
+        <!--Bootstrap-->
         <section id="contacto">
             <div class="container-fluid">
 
-                <div class="section-header">
+                <div class="section-header text-center">
                     <H3>CONTÁCTANOS</H3>
                 </div>
 
@@ -66,64 +71,56 @@
 
                             <div class="form-row">
 
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-6 mx-auto">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Escribe tu nombre" data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 carácteres"/>
                                     <div class="validation"></div>
                                 </div>
 
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-6 mx-auto">
                                     <input type="email" class="form-control" name="email" id="email" placeholder="matias123@gmail.com" data-rule="email" data-msg="Por favor ingresar email valido" />
                                     <div class="validation"></div>
                                 </div>
 
-                            </div>
-
-                                <div class="form-group">
+                                <div class="form-group col-lg-6 mx-auto">
                                     <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Por favor escribe" placeholder="Mensaje"></textarea>
                                     <div class="validation"></div>
                                 </div>
-
-                            <div class="text-center"><button type="submit" title="Send">Send</button></div>
+                            </div>
+                            <div class="text-center col-lg-4 mx-auto"><button type="submit" title="Send">Send</button></div>
                         </form>
-                        <!--Termina Formulario-->
                     </div>
+                    <!--Termina Formulario-->
                 </div>
             </div>
         </section>
+
     </main>
 
     <!--Empieza footer-->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h4>VISÍTANOS</h4>
-                        <P>Av. Emilio Castro 7525, Buenos Aires, Argentina.</P>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h4>HORARIOS</h4>
-                        <P>Martes a Sábados
-                            de 10 a 20 hs.</P>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h4>LLÁMANOS</h4>
-                        <P>+(54)11-6226-7949
-                            +(54)11-2143-9023</P>
-                    </div>
-
-                    <div>
-                        <h4>SÍGUENOS</h4>
-                        <!--Acá van los social links-->
-                    </div>
-
-                </div>
+    <!--GRIDS-->
+    <footer class="footer">
+        <div class="footerorden">
+            <div class="column1">
+                <h4>VISÍTANOS</h4>
+                <P>Av. Emilio Castro 7525, <br>Buenos Aires, Argentina.</P>
+            </div>
+            <div class="column2">
+                <h4>HORARIOS</h4>
+                <P>Martes a Sábados <br> de 10 a 20 hs.</P>
+            </div>
+            <div class="column3">
+                <h4>LLÁMANOS</h4>
+                <P>+(54)11-6226-7949 <br>+(54)11-2143-9023</P>
+            </div>
+            <div class="column4">
+                <h4>SÍGUENOS</h4>
+                <!--Acá van los social links-->
             </div>
         </div>
     </footer>
     <!--Termina Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>
