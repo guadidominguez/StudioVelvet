@@ -1,29 +1,51 @@
 /*MEDIA QUERIES*/
 
-@media (min-width:768px){
+@media (min-width:769px){
+    .navbar{
+        position:relative;
+        width:100%;
+        background: #020304;
+        left:0;
+        right:-100%;
+        top:0;
+        text-align: center;
+        padding:0px;
+        z-index:100;
+        transition: 0.8s;
+        .logo{
+            display: block;
+        }
+        .hamburger{
+            display:none;
+        }
+        .menu{
+            display:flex;
+            padding:20px;
 
-    // /*HEADER*/
-    // header{
-    //     .menu{
-    //         position:relative;
-    //         width:100%;
-    //         height:100vh;
-    //         background: #020304;
-    //         left:0;
-    //         right:-100%;
-    //         top:0;
-    //         text-align: center;
-    //         padding: 100px 0px;
-    //         z-index:100;
-    //         transition: 0.8s;
-    //         .link{
-    //             display:block;
-    //             padding:20px;
-    //         }
-    //     // }
-    // }
-    /*HEADER*/
+        }
+    }
+}
 
+@media (min-width: 320px) and (max-width: 768px) {
+    .navbar {
+        position:relative;
+        width:100%;
+        height:100%;
+        background: #020304;
+        left:0;
+        right:0;
+        top:0;
+        text-align: center;
+        padding:0px;
+        z-index:100;
+        transition: 0.8s;
+        .hamburger {
+            display: flex;
+        }
+        .menu {
+            display: none;
+        }
+    }
     /*PRODUCTOS*/
     .galeria{
         display: flex;
@@ -51,9 +73,45 @@
                     display: flex;
                     justify-content: center;
                     align-content: center;
-
                 }
             }
         }
     }
+    .product-section {
+        flex-direction: column;
+    }
 }
+
+// @media (max-width: 768px) {
+//     .navbar{
+//         .menu{
+//             display: inline-block;
+//             &.show{
+//                 display: flex;
+//                 flex-direction: column;
+//             }
+//         }
+//     }
+// }
+// @media (min-width: 768px) and (max-width: 1023px) {
+//     .navbar {
+//       /* Estilos para la versión de hamburguesa */
+//     }
+
+//     .menu {
+//       display: none; /* Oculta la lista de menú */
+//     }
+//   }
+
+//   /* Estilos del menú para dispositivos más pequeños a partir de 768px */
+//   @media (max-width: 767px) {
+//     .navbar {
+//       display: none; /* Oculta el contenedor del menú */
+//     }
+//     .hamburger {
+//       /* Estilos para mostrar la hamburguesa */
+//     }
+//     .menu {
+//       /* Estilos para mostrar el menú desplegable */
+//     }
+//   }

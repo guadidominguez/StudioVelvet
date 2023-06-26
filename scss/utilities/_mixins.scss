@@ -22,3 +22,21 @@
 	justify-content:$content;
 	align-content:$align;
 	}
+
+	// @mixin media-query($breakpoint) {
+	// 	@if $breakpoint == sm {
+	// 		@media (min-width: 375px) {
+	// 			@content;
+	// 		}
+	// 	}
+	// 	@else if $breakpoint == md {
+	// 		@media (min-width: 768px) {
+	// 			@content;
+	// 		}
+	// 	}
+	// 	@else if $breakpoint == lg {
+	// 		@media (min-width: 1200px) {
+	// 			@content;
+	// 		}
+	// 	}
+	// }

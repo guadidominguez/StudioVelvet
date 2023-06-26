@@ -15,60 +15,76 @@ h4 {
   font-size: 14px; }
 
 /*MENÚ*/
-.fadeInDown {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown; }
-
-header {
-  height: 100px;
-  padding: 0 50px;
+.navbar {
+  background: black;
+  color: white;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center; }
-  header input {
-    display: none; }
-  header .menu .link {
-    text-transform: uppercase;
-    transition: 0.4s;
-    color: white;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 28px;
-    padding: 0 10px 0 48px;
-    text-decoration: none; }
-    header .menu .link:hover {
-      text-decoration: none;
-      color: yellow;
-      transition: 0.4s; }
-  header .menu .esconder-menu {
-    order: 1;
-    font-size: 30px;
-    display: none;
-    transition: 0.4s; }
-  header .mostrar-menu {
-    order: 1;
-    font-size: 30px;
-    display: none;
-    transition: 0.4s; }
+  padding: 10px;
+  height: auto; }
+  .navbar .logo img {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 20px; }
+  .navbar .hamburger {
+    width: 30px;
+    height: auto;
+    background: white;
+    margin-right: 20px;
+    flex-direction: column;
+    cursor: pointer; }
+    .navbar .hamburger span {
+      width: 30px;
+      height: 3px;
+      background-color: black;
+      margin-bottom: 5px; }
+  .navbar .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100px; }
+    .navbar .menu li {
+      margin-bottom: 10px; }
+      .navbar .menu li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.4s;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        padding: 0 10px 0 48px;
+        text-decoration: none; }
+        .navbar .menu li a:hover {
+          text-decoration: none;
+          color: yellow;
+          transition: 0.4s; }
+      .navbar .menu li .active {
+        text-transform: uppercase;
+        transition: 0.4s;
+        color: yellow;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        padding: 0 10px 0 48px;
+        text-decoration: none; }
 
-.menu .active {
-  text-transform: uppercase;
-  transition: 0.4s;
-  color: yellow;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 28px;
-  padding: 0 10px 0 48px;
-  text-decoration: none; }
+.content {
+  padding: 20px; }
 
-#check {
-  display: none; }
+/*servicios*/
+#servicios .card {
+  width: 80%;
+  margin-bottom: 20px; }
 
-/*TERMINA MENÚ*/
 /*PRODUCTOS*/
 .section-header h3 {
   display: flex;
@@ -115,11 +131,22 @@ header {
           transform: scale(1.1); }
 
 /*TERMINA PRODUCTOS*/
+/*CAROUSEL*/
+.slide {
+  margin-top: 10px; }
+  .slide .carousel-item img {
+    height: auto; }
+
+/*TERMINA CAROUSEL*/
 /*NOSOTROS*/
 #intro {
   padding-top: 70px; }
   #intro .container .row {
     flex-wrap: nowrap; }
+    #intro .container .row .col-sm-12 {
+      padding: 0; }
+      #intro .container .row .col-sm-12 img {
+        max-width: 100%; }
 
 /*TERMINA NOSOTROS*/
 /*CONTACTO*/
@@ -159,6 +186,10 @@ header {
       border-color: yellow;
       color: black; }
 
+.product-section {
+  display: flex;
+  flex-wrap: wrap; }
+
 /*TERMINA SERVICIOS*/
 /*FOOTER*/
 .footer {
@@ -183,8 +214,43 @@ header {
 
 /*TERMINA FOOTER*/
 /*MEDIA QUERIES*/
-@media (min-width: 768px) {
-  /*HEADER*/
+@media (min-width: 769px) {
+  .navbar {
+    position: relative;
+    width: 100%;
+    background: #020304;
+    left: 0;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 0px;
+    z-index: 100;
+    transition: 0.8s; }
+    .navbar .logo {
+      display: block; }
+    .navbar .hamburger {
+      display: none; }
+    .navbar .menu {
+      display: flex;
+      padding: 20px; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .navbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #020304;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding: 0px;
+    z-index: 100;
+    transition: 0.8s; }
+    .navbar .hamburger {
+      display: flex; }
+    .navbar .menu {
+      display: none; }
   /*PRODUCTOS*/
   .galeria {
     display: flex;
@@ -210,4 +276,6 @@ header {
         .galeria .foto .fotos .fotos2 {
           display: flex;
           justify-content: center;
-          align-content: center; } }
+          align-content: center; }
+  .product-section {
+    flex-direction: column; } }

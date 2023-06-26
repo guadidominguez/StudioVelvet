@@ -1,71 +1,133 @@
 /*MENÚ*/
-.fadeInDown{
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-}
-
-header{
-    height: 100px;
-    padding: 0 50px;
+.navbar {
+    background: $color-principal;
+    color: $color-fuentes;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: auto;
+    .logo {
+        img {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-top: 0px;
+            padding-bottom: 20px;
 
-    input {
-        display:none;
+        }
+    }
+    .hamburger {
+        width: 30px;
+        height: auto;
+        background:white;
+        margin-right: 20px;
+        flex-direction: column;
+        cursor: pointer;
+        span{
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin-bottom: 5px;
+        }
     }
     .menu {
-        .link{
-            text-transform: uppercase;
-            transition: 0.4s;
-            color:white;
-            font-size: 16px;
-            letter-spacing: 0;
-            line-height: 28px;
-            padding: 0 10px 0 48px;
-            text-decoration: none;
-            &:hover{
+        list-style: none;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        height: 100px;
+        li {
+            margin-bottom: 10px;
+            a {
+                color: #fff;
                 text-decoration: none;
-                color:  yellow;
+                text-transform: uppercase;
                 transition: 0.4s;
+                color:white;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 28px;
+                padding: 0 10px 0 48px;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: none;
+                    color:  yellow;
+                    transition: 0.4s;
+                }
+            }
+            .active{
+                text-transform: uppercase;
+                transition: 0.4s;
+                color:yellow;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 28px;
+                padding: 0 10px 0 48px;
+                text-decoration: none;
             }
         }
-        .esconder-menu{
-            order:1;
-            font-size: 30px;
-            display: none;
-            transition: 0.4s;
-        }
-    }
-    .mostrar-menu{
-        order:1;
-        font-size: 30px;
-        display: none;
-        transition: 0.4s;
-    }
-
-}
-
-.menu{
-    .active{
-        text-transform: uppercase;
-        transition: 0.4s;
-        color:yellow;
-        font-size: 16px;
-        letter-spacing: 0;
-        line-height: 28px;
-        padding: 0 10px 0 48px;
-        text-decoration: none;
     }
 }
+// header{
+//     height: 100px;
+//     padding: 0 50px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
 
+//     input {
+//         display:none;
+//     }
+//     .menu {
+//         .link{
+//             text-transform: uppercase;
+//             transition: 0.4s;
+//             color:white;
+//             font-size: 16px;
+//             letter-spacing: 0;
+//             line-height: 28px;
+//             padding: 0 10px 0 48px;
+//             text-decoration: none;
+//             &:hover{
+//                 text-decoration: none;
+//                 color:  yellow;
+//                 transition: 0.4s;
+//             }
+//         }
+//         .esconder-menu{
+//             order:1;
+//             font-size: 30px;
+//             display: none;
+//             transition: 0.4s;
+//         }
+//     }
+//     .mostrar-menu{
+//         order:1;
+//         font-size: 30px;
+//         display: none;
+//         transition: 0.4s;
+//     }
 
-#check {
-  display: none
-}
+// }
 
-/*TERMINA MENÚ*/
+// .menu{
+//     .active{
+//         text-transform: uppercase;
+//         transition: 0.4s;
+//         color:yellow;
+//         font-size: 16px;
+//         letter-spacing: 0;
+//         line-height: 28px;
+//         padding: 0 10px 0 48px;
+//         text-decoration: none;
+//     }
+// }
+
+// #check {
+//     display: none
+// }
+// /*TERMINA MENÚ*/

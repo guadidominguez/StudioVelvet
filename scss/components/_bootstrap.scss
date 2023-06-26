@@ -1,9 +1,26 @@
+/*CAROUSEL*/
+.slide{
+    margin-top: 10px;
+    .carousel-item{
+        img{
+            height: auto;
+        }
+    }
+}
+/*TERMINA CAROUSEL*/
+
 /*NOSOTROS*/
 #intro {
     padding-top: 70px;
     .container{
         .row{
-        flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            .col-sm-12{
+                padding:0;
+                img{
+                    max-width:100%;
+                }
+            }
         }
     }
 }
@@ -54,5 +71,9 @@
             color: black;
         }
     }
+}
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
 }
 /*TERMINA SERVICIOS*/
